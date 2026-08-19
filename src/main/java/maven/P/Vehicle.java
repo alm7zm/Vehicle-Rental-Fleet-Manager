@@ -52,10 +52,10 @@ public abstract class Vehicle implements Comparable<Vehicle> {
 		return this.available;
 	}
 
+	@Override
 	public String toString() {
-		return "\n id: " + getID() + "\n make: " + getMake() + "\n model: " + getModel() + "\n dailyRate: "
-				+ getDailyRate() + "\n available: " + getAvailable();
-
+		return "Vehicle [id=" + id + ", make=" + make + ", model=" + model + ", dailyRate=" + dailyRate + ", available="
+				+ available + "]";
 	}
 
 	public int compareTo(Vehicle other) {

@@ -5,6 +5,13 @@ import java.util.List;
 public class FleetUtils {
 	public static <T extends Vehicle> T findCheapeast(List<T> VList) {
 		// i will do a Linear Scan based on DailyRate
+		if (VList.size() == 0) {
+			throw new IllegalArgumentException("the List is empty");
+
+		}
+		if (VList.size() == 1) {
+			return VList.get(0);
+		}
 		T cheapest = VList.get(0);
 		for (int i = 1; i < VList.size(); i++) {
 			if (cheapest.getDailyRate() > VList.get(i).getDailyRate()) {
