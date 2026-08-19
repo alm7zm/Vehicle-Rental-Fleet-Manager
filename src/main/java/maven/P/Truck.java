@@ -18,4 +18,9 @@ public class Truck extends Vehicle {
 		return this.cargoCapacityTons;
 	}
 
+	@Override
+	public String toString() {
+		return "Truck [toString()=" + super.toString() + ", cargoCapacityTons=" + cargoCapacityTons + "]";
+	}
+
 }

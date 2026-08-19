@@ -17,4 +17,9 @@ public class Motorcycle extends Vehicle {
 	public int getEngineCC() {
 		return this.engineCC;
 	}
+
+	@Override
+	public String toString() {
+		return "Motorcycle [toString()=" + super.toString() + ", engineCC=" + engineCC + "]";
+	}
 }

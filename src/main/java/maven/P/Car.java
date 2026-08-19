@@ -13,6 +13,11 @@ public class Car extends Vehicle {
 		return getDailyRate() * days + 5 * days;
 	}
 
+	@Override
+	public String toString() {
+		return "Car [toString()=" + super.toString() + ", numDoors=" + numDoors + "]";
+	}
+
 	public int getNumDoors() {
 		return this.numDoors;
 	}
