@@ -1,6 +1,7 @@
 package maven.P;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class RentalAgency {
@@ -63,5 +64,10 @@ public class RentalAgency {
 						.println(i + ": " + this.fleet.get(i).getID() + " " + this.fleet.get(i).calculateRentalCost(3));
 			}
 		}
+	}
+
+	public void sortFleetBy(Comparator<Vehicle> compare) {
+		this.fleet.sort(compare);
+
 	}
 }
