@@ -1,5 +1,18 @@
 package maven.P;
 
+import java.util.List;
+
 public class FleetUtils {
+	public static <T extends Vehicle> T findCheapeast(List<T> VList) {
+		// i will do a Linear Scan based on DailyRate
+		T cheapest = VList.get(0);
+		for (int i = 1; i < VList.size(); i++) {
+			if (cheapest.getDailyRate() > VList.get(i).getDailyRate()) {
+				cheapest = VList.get(i);
+			}
+		}
+		return cheapest;
+
+	}
 
 }
