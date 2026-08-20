@@ -32,7 +32,7 @@ public abstract class Vehicle implements Comparable<Vehicle> {
 		this.available = true;
 	}
 
-	public String getID() {
+	public final String getID() {
 		return this.id;
 	}
 

@@ -1,6 +1,6 @@
 package maven.P;
 
-public class Motorcycle extends Vehicle {
+public final class Motorcycle extends Vehicle {
 	private int engineCC;
 
 	public Motorcycle(String id, String make, String model, double dailyRate, int engineCC) {
