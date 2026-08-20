@@ -26,5 +26,10 @@ public class FleetUtils {
 		for (int i = 0; i < Vehicles.size(); i++) {
 			System.out.println(Vehicles.get(i).toString());
 		}
+
+	}
+
+	public static int countVehicles(List<?> list) {
+		return list.size();
 	}
 }
