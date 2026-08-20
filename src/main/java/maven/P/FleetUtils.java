@@ -24,7 +24,7 @@ public class FleetUtils {
 
 	public static void printAny(List<? extends Vehicle> Vehicles) {
 		for (int i = 0; i < Vehicles.size(); i++) {
-			Vehicles.get(i).toString();
+			System.out.println(Vehicles.get(i).toString());
 		}
 	}
 }
