@@ -3,7 +3,7 @@ package maven.P;
 import java.util.List;
 
 public class FleetUtils {
-	public static <T extends Vehicle> T findCheapeast(List<T> VList) {
+	public static <T extends Vehicle> T findCheapest(List<T> VList) {
 		// i will do a Linear Scan based on DailyRate
 		if (VList.size() == 0) {
 			throw new IllegalArgumentException("the List is empty");
