@@ -70,4 +70,11 @@ public class RentalAgency {
 		this.fleet.sort(compare);
 
 	}
+
+	public void checkInVehicle(String id, VehicleListener listner) {
+		Vehicle vehicle = findById(id);
+		vehicle.checkIn();
+		listner.onReturn(vehicle);
+	}
+
 }
