@@ -32,4 +32,12 @@ public class FleetUtils {
 	public static int countVehicles(List<?> list) {
 		return list.size();
 	}
+
+	public static Pair<Vehicle, Double> cheapestWithCost(List<Vehicle> Vehicles, int days) {
+		Vehicle cheapest = findCheapest(Vehicles);
+		// Double calculation=cheapest.calculateRentalCost(days); //this was modified to
+		// be a single line
+		Pair<Vehicle, Double> pair = new Pair<Vehicle, Double>(cheapest, (Double) cheapest.calculateRentalCost(days));
+		return pair;
+	}
 }
