@@ -77,4 +77,12 @@ public class RentalAgency {
 		listner.onReturn(vehicle);
 	}
 
+	// it prints all Vehicles in the fleet using Method Refrecing style
+	public void printAllViaMethodRef() {
+		// this.fleet.forEach(n->n.toString()); //it can be written this way as well
+
+		// this.fleet.forEach(ContainingType::methodName)
+		this.fleet.forEach(Vehicle::toString);
+	}
+
 }
